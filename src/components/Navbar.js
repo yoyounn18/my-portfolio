@@ -30,6 +30,11 @@ export default function Navbar() {
                     >
                         Project
                     </NavLink>
+                    <NavLink to="todolist" className="inline-flex cursive items-center py-3 px-3 my-6 mx-1 rounded text-black-200 hover:bg-black hover:opacity-50 hover:text-white"
+                        activeClassName="text-red-100 bg-black"
+                    >
+                        Todo List
+                    </NavLink>
                     <NavLink to="about" className="inline-flex cursive items-center py-3 px-3 my-6 mx-1 rounded text-black-200 hover:bg-black hover:opacity-50 hover:text-white"
                         activeClassName="text-red-100 bg-black"
                     >

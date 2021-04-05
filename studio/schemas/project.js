@@ -19,6 +19,10 @@ export default {
         type: "text",
     },
     {
+        name: "techStack",
+        type: "string",
+    },
+    {
         name: "projectType",
         title: "Project type",
         type: "string",

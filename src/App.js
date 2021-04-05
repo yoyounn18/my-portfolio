@@ -5,6 +5,7 @@ import SinglePost from "./components/SinglePost";
 import Post from "./components/Post";
 import Project from "./components/Project";
 import NavBar from "./components/Navbar";
+import Todolist from "./components/Todolist";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route component={SinglePost} path='/post/:slug' />
         <Route component={Post} path='/post' />
         <Route component={Project} path='/project' />
+        <Route component={Todolist} path='/todolist' />
       </Switch>
     </BrowserRouter>
   );
