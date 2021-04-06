@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@kfonts/nexon-maplestory-otf": "^0.1.2",
     "@sanity/block-content-to-react": "^2.0.7",
     "@sanity/client": "^2.7.1",
     "@sanity/image-url": "^0.140.22",

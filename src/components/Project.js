@@ -13,7 +13,7 @@ export default function Project() {
           place,
           description,
           projectType,
-          techStack,
+          techstack,
           link,
           tags
       }`
@@ -32,8 +32,8 @@ export default function Project() {
                 <section className="grid grid-cols-2 gap-8">
                     {projectData &&
                         projectData.map((project, index) => (
-                            <article className="relative bg-white rounded-lg shadow-2xl bg-white p-16">
-                                <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-700">
+                            <article className="relative bg-white maple-font rounded-lg shadow-2xl bg-white p-10">
+                                <h3 className="text-gray-800 maple-font text-3xl font-bold  mb-2 hover:text-red-700">
                                     <a
                                         href={project.link}
                                         alt={project.title}
@@ -58,9 +58,9 @@ export default function Project() {
                                     </span>
                                     <span>
                                         <strong className="font-bold">Tech Stack</strong>:{" "}
-                                        {project.techStack}
+                                        {project.techstack}
                                     </span>
-                                    <p className="my-6 text-lg text-gray-700 leading-relaxed">
+                                    <p className="my-3 text-xl maple-font text-gray-700 leading-relaxed">
                                         {project.description}
                                     </p>
                                     <a
@@ -71,8 +71,8 @@ export default function Project() {
                                     >
                                         View The Project{" "}
                                         <span role="img" aria-label="right pointer">
-                                            👉
-                    </span>
+
+                                        </span>
                                     </a>
                                 </div>
                             </article>

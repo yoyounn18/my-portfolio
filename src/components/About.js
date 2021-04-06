@@ -15,7 +15,7 @@ export default function About() {
             .fetch(
                 `*[_type == "author"]{
           name,
-          "bio": bio[0].children[0].text,
+          bio,
           "authorImage": image.asset->url
       }`
             )
@@ -40,7 +40,7 @@ export default function About() {
                             I'm{" "}
                             <span className="text-green-100">{author.name}</span>
                         </h1>
-                        <p className="text-green-200 text-lg">{author.bio}</p>
+                        <p className="text-green-200 text-2xl maple-font">{author.bio}</p>
                     </div>
                 </section>
             </div>

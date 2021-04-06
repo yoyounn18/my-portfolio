@@ -27,6 +27,19 @@ export default {
                     type: "string",
                 },
             ],
-        }
+        },
+        {
+            name: "techstack",
+            title: "Tech Stack",
+            type: "array",
+            of: [
+                {
+                    type: "string",
+                },
+            ],
+            options: {
+                layout: "tags",
+            },
+        },
     ]
 }

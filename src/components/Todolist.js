@@ -12,7 +12,8 @@ export default function Todolist() {
                 title,
                 author,
                 date,
-                content
+                content,
+                techstack,
             }`
             )
             .then((data) => setTodo(data))
@@ -33,33 +34,36 @@ export default function Todolist() {
                         todoData.map((todo, index) => (
                             <article>
                                 <span
-                                    className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-green-900"
+                                    className="block h-64 relative rounded shadow leading-snug bg-white shadow-2xl"
                                     key={index}
                                 >
-                                    <span className="cursive pl-4 mt-5 text-2xl">
+                                    <span className="cursive pl-4 mt-5 pt-2 text-2xl">
                                         {new Date(todo.date).toLocaleDateString()}
                                     </span>
-                                    <div>
-                                        <span>
-
-                                        </span>
-                                        {/* <p
-                                            onClick={crossLine}
-                                        >
+                                    <div className="grid grid-flow-col grid-rows-5 gap-3 ml-2 mt-3 text-xl maple-font">
+                                        <span className="ml-4 maple-font">
                                             {todo.content[0]}
-                                        </p> */}
-                                    </div>
-                                    <div>
-                                        {todo.content[1]}
-                                    </div>
-                                    <div>
-                                        {todo.content[2]}
-                                    </div>
-                                    <div>
-                                        {todo.content[3]}
-                                    </div>
-                                    <div>
-                                        {todo.content[4]}
+                                        </span>
+                                        <span className="ml-4">
+                                            {todo.content[1]}
+                                        </span>
+                                        <span className="ml-4">
+                                            {todo.content[2]}
+                                        </span>
+                                        <span className="ml-4">
+                                            {todo.content[3]}
+                                        </span>
+                                        <div className="gird gird-flow-col grid-col-5 text-xl ">
+                                            <span className=" text-gray-200 bg-green-900 rounded m-1 p-1">
+                                                {todo.techstack[0]}
+                                            </span>
+                                            <span className=" text-gray-200 bg-green-900 rounded m-1 p-1">
+                                                {todo.techstack[1]}
+                                            </span>
+                                            <span className=" text-gray-200 bg-green-900 rounded m-1 p-1">
+                                                {todo.techstack[2]}
+                                            </span>
+                                        </div>
                                     </div>
                                 </span>
                             </article>

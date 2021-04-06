@@ -1,7 +1,7 @@
 @import url("https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css");
 @import url("https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
-
+@import url("https://unpkg.com/@kfonts/nexon-maplestory-otf/index.css");
 .cursive {
   font-family: "Dela Gothic One", cursive;
 }
@@ -14,4 +14,8 @@
 
 .home-name {
   font-size: 150px;
+}
+
+.maple-font {
+  font-family: "메이플스토리 OTF", "메이플스토리OTF", "nexon-maplestory-otf";
 }
